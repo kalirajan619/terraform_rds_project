@@ -22,7 +22,7 @@ resource "aws_db_instance" "myrdss" {
   engine               = "mysql"
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
-  name                 = "mydb"
+  db_name                 = "mydb"
   username             = "foo"
   #password             = file("../password.txt")
   password = var.password
