@@ -6,8 +6,7 @@ resource "aws_db_instance" "myrdss" {
   instance_class       = "db.t2.micro"
   db_name                 = "mydb"
   username             = "foo"
-  #password             = file("../password.txt")
-  password = "faugfufagu"
+  password             = file("../password.txt")
   parameter_group_name = "default.mysql5.7"
   skip_final_snapshot = "true"
 }
