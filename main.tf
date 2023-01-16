@@ -12,6 +12,8 @@ resource "aws_instance" "instance1" {
   }
 }
 variable "replica"{
+  type = number
+  default = ""
 }
 resource "aws_instance" "instance2" {
   ami           = "ami-0f1fb91a596abf28d"
