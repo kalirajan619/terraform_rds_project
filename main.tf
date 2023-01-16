@@ -11,10 +11,12 @@ resource "aws_instance" "instance1" {
     Name = "Instance1"
   }
 }
-
+variable "replica"{
+}
 resource "aws_instance" "instance2" {
   ami           = "ami-0f1fb91a596abf28d"
   instance_type = "t2.micro"
+  count = var.replica
   tags = {
     Name = "Instance2"
   }
