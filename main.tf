@@ -12,7 +12,7 @@ resource "aws_instance" "instance1" {
   }
 }
 variable "replica"{
-  type = number
+  type = string
   default = ""
 }
 resource "aws_instance" "instance2" {
