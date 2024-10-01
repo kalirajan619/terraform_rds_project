@@ -1,5 +1,5 @@
 variable "region" {
-  default = "ap-southeast-2"
+  default = "us-west-2"
 }
 
 variable "access_key" {
